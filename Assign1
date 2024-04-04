@@ -34,3 +34,44 @@ class Codechef
 
 	}
 }
+//3.Currently there are courses for 4 languages, and hence there are 8 courses in this section. But suppose there are courses for N languages, what will be the total number of courses in this section?
+Input Format:The only line of input will contain a single integer N, denoting the number of languages for which there are courses.
+Output Format:Output on a single line the total number of courses in the section.//
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	Scanner sc = new Scanner(System.in);
+	int x= sc.nextInt();
+	System.out.println(2*x);
+
+	}
+}
+//4 Chef and Brain Speed
+In ChefLand, human brain speed is measured in bits per second (bps). Chef has a threshold limit of X bits per second above which his calculations are prone to errors. If Chef is currently working at Y bits per second, is he prone to errors?If Chef is prone to errors print YES, otherwise print NO.
+Input Format:The only line of input contains two space separated integers X and Y — the threshold limit and the rate at which Chef is currently working at.
+Output Format:If Chef is prone to errors print YES, otherwise print NO.
+You may print each character of the string in uppercase or lowercase (for example, the strings yes, Yes, yEs, and YES will all be treated as identical).//
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+	public static void main (String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		String ans = (y>x)? "Yes":"No";
+	        System.out.println(ans);
+	        sc.close();
+	}
+		
+	}
+}
