@@ -1,0 +1,123 @@
+Multiple Choice Question
+1.In Java, what statement do you use to output the number 42 to the screen?
+   Select one of the following options.
+   a.System.print.out(42);
+   b.System.out.print(42);
+   c.system.print.out(42);
+  option:b
+2.What is an array in Java?
+
+A) A collection of elements of different types.
+B) A data structure that stores elements of the same type in contiguous memory locations.
+C) A predefined class in Java to store elements.
+D) An abstract data type for storing elements with no specific memory organization.
+Answer: B) A data structure that stores elements of the same type in contiguous memory locations.
+
+3.What is the index of the first element in a Java array?
+
+A) 0
+B) 1
+C) -1
+D) Depends on the size of the array.
+Answer: A) 0
+
+4.Which of the following statements is true regarding arrays in Java?
+
+A) Arrays can dynamically resize themselves.
+B) Elements of an array must be of the same data type.
+C) Arrays cannot store primitive data types.
+D) Arrays in Java are always sorted.
+Answer: B) Elements of an array must be of the same data type.
+
+5.What is the syntax to declare an array in Java?
+
+A) array myArray[];
+B) array[] myArray;
+C) int myArray[];
+D) int[] myArray;
+Answer: D) int[] myArray;
+
+CODING QUESTIONS
+//1.Search an element in an array
+You are given an array A of size N and an element X. Your task is to find whether the array A contains the element X or not.
+Input Format:The first line contains two space-separated integers N and X — the size of array and the element to be searched.The second line contains all the elements of array A
+Output Format:Output "YES" if the element X is present in A, otherwise output "NO".//
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int X = scanner.nextInt();
+        
+        boolean found = false; // Flag to indicate if X is found
+        for (int i = 0; i < N; i++) {
+            int element = scanner.nextInt();
+            if (element == X) {
+                found = true;
+                break;
+            }
+        }
+        
+        if (found) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
+//2.Find maximum in an ArrayGiven a list of N integers, representing height of mountains. Find the height of the tallest mountain.
+Input:First line will contain T, number of testcases. Then the testcases follow.The first line in each testcase contains one integer, N.The following N lines of each test case each contain one integer: the height of a new mountain.
+Output:For each testcase, output one line with one integer: the height of the tallest mountain for that test case.//
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int n=sc.nextInt();
+		    int max=0;
+		    int a[]=new int[n];
+		    for(int j=0;j<n;j++){
+		        a[j]=sc.nextInt();
+		        if(a[j]>max)
+		            max=a[j];
+		    }
+		    System.out.println(max);
+		}
+	}
+}
+//3.Reversing an array in place//
+public class ReverseArray {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        reverseArray(arr);
+        System.out.println("Reversed array:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+    public static void reverseArray(int[] arr) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start < end) {
+            
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            
+            start++;
+            end--;
+        }
+    }
+}
