@@ -1,0 +1,88 @@
+//1.DNA Storage
+For encoding an even-length binary string into a sequence of A, T, C, and G, we iterate from left to right and replace the characters as follows:
+00 is replaced with A
+01 is replaced with T
+10 is replaced with C
+11 is replaced with G
+Given a binary string 
+S of length N (N is even), find the encoded sequence.
+Input FormatFi:rst line will contain T, number of test cases. Then the test cases follow.Each test case contains two lines of input.First line contains a single integer N, the length of the sequence.Second line contains binary string S of length N.
+Output Format:For each test case, output in a single line the encoded sequence.
+Note: Output is case-sensitive.//
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
+        while (t-- > 0) {
+            int n = scanner.nextInt();
+            String s = scanner.next();
+                for(int i=0;i<n;i+=2){
+                if(s.charAt(i)=='0' && s.charAt(i+1)=='0'){
+                    System.out.print("A");
+                }
+                else if(s.charAt(i)=='0' && s.charAt(i+1)=='1'){
+                    System.out.print("T");
+                }
+                else if(s.charAt(i)=='1' && s.charAt(i+1)=='0'){
+                    System.out.print("C");
+                }
+                 else if(s.charAt(i)=='1' && s.charAt(i+1)=='1'){
+                    System.out.print("G");
+            }
+            System.out.println();
+            // Your code goes here     
+        }
+    }
+}
+}
+Sample Input:
+4
+2
+00
+4
+0011
+6
+101010
+4
+1001
+Your Output:
+A
+A
+G
+C
+C
+C
+C
+T
+//2.Alphabetical ordering by strings//
+class StringOrdering
+{
+  static String name[]={"Madras","Delhi","Ahmedabad","Calculate","Bombay"};
+  public static void main(String args[])
+{
+  int size=name.length;
+  String temp=null;
+  for (int i=0;i<size;i++)
+  {
+    for(int j=i+1;j<size;j++)
+    {
+      if(name[j].compareTo(name[i])<0)
+        temp=name[i];
+        name[i]=name[j];
+        name[j]=temp;
+      }
+  }
+}
+for(int i=0;i<size;i++)
+{
+  System.out.println(name[i]);
+}
+}
+}
+output:
+Ahmedabad
+Bombay
+Calculate
+Delhi
+Madras
