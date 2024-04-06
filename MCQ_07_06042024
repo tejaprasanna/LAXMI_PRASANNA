@@ -1,0 +1,68 @@
+1.What is a string in programming?
+a) A data type representing integers
+b) A data structure to store multiple values
+c) A sequence of characters
+d) A way to declare variables
+option:c
+
+2.Which of the following is NOT a valid method for creating a string in Python?
+a) Using single quotes (' ')
+b) Using double quotes (" ")
+c) Using triple quotes (''' ''')
+d) Using parentheses (( ))
+option:d
+
+3.In C programming, which function is used to compare two strings?
+a) strcmp()
+b) strcomp()
+c) compare()
+d) strcompare()
+option:a
+
+4.What does the string method str.upper() do in Python?
+a) Converts the string to uppercase
+b) Converts the string to lowercase
+c) Checks if the string is uppercase
+d) Removes all spaces from the string
+option:a
+
+5.Which of the following methods in JavaScript is used to find the index within a string of the first occurrence of a specified value?
+a) indexOf()
+b) search()
+c) find()
+d) locate()
+option:a
+
+6.What does the method str.split() do in Python?
+a) Splits the string into a list of substrings based on a specified separator
+b) Joins two strings together
+c) Removes leading and trailing whitespace from the string
+d) Returns the index of the specified substring
+option:a
+
+7.Which of the following is the correct way to access the length of a string in Java?
+a) str.size()
+b) str.length()
+c) str.count()
+d) str.sizeof()
+option:b
+
+8.Which character is used to concatenate two strings in most programming languages?
+a) +
+b) -
+c) *
+d) /
+option:a
+9.In Python, what does the expression len("Hello") return?
+a) 5
+b) 4
+c) 6
+d) 10
+option:b
+
+10.Which of the following is NOT a valid string manipulation method in most programming languages?
+a) reverse()
+b) replace()
+c) concat()
+d) substr()
+option:d
